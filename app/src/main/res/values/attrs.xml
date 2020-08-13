@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="IncDecView">
+        <attr name="count" format="integer" />
+        <attr name="maxCount" format="integer" />
+    </declare-styleable>
+</resources>

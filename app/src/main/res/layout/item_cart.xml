@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp">
+
+    <TextView
+        android:id="@+id/txtItemName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="10dp"
+        android:text="Guac de la Costa"
+        android:textColor="@color/colorFoodName"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toStartOf="@+id/Qty"
+        app:layout_constraintStart_toStartOf="@+id/guideline"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:src="@drawable/ic_chat"
+        app:layout_constraintEnd_toEndOf="@+id/Qty"
+        app:layout_constraintTop_toBottomOf="@+id/Qty" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/food_type_border"
+        android:gravity="center"
+        android:padding="3dp"
+        android:text="N"
+        android:textColor="@color/colorFoodType"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toStartOf="@+id/guideline"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/txtItemName" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/food_type_border"
+        android:gravity="center"
+        android:padding="3dp"
+        android:text="D"
+        android:textColor="@color/colorFoodType"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="@+id/textView3"
+        app:layout_constraintStart_toStartOf="@+id/textView3"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+
+    <TextView
+        android:id="@+id/txtItemDesc"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Item Description"
+        android:textSize="14sp"
+        android:textColor="@color/colorFoodDesc"
+        app:layout_constraintEnd_toEndOf="@+id/txtItemName"
+        app:layout_constraintStart_toStartOf="@+id/guideline"
+        app:layout_constraintTop_toBottomOf="@+id/txtItemName" />
+
+    <TextView
+        android:id="@+id/txtItemPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="€ 7"
+        android:textColor="@color/colorFoodPrice"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/txtItemDesc"
+        app:layout_constraintTop_toBottomOf="@+id/txtItemDesc" />
+
+    <com.test.doodleblue.IncDecView
+        android:id="@+id/Qty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="5dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/txtItemName"
+        app:maxCount="20" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.07" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

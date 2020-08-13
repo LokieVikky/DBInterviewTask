@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/iBtn"
+        android:title="info"
+        android:icon="@drawable/ic_info"
+        android:iconTint="#ffffff"
+        app:showAsAction="ifRoom"
+        android:orderInCategory="100"/>
+
+    <item
+        android:id="@+id/uploadBtn"
+        android:title="upload"
+        android:icon="@drawable/ic_iconfinder_upload_172619"
+        android:iconTint="#ffffff"
+        app:showAsAction="ifRoom"/>
+
+
+
+</menu>
